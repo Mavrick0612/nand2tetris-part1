@@ -11,10 +11,10 @@ CHIP Or {
     OUT out;
 
     PARTS:
-    // First, compute the NAND of a and b
+  
     Nand(a=a, b=a, out=notA);  // notA = NAND(a, a) = NOT(a)
     Nand(a=b, b=b, out=notB);  // notB = NAND(b, b) = NOT(b)
     
-    // Compute the NAND of notA and notB
+
     Nand(a=notA, b=notB, out=out);  // out = NAND(NOT(a), NOT(b)) = OR(a, b)
 }
