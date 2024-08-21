@@ -11,6 +11,6 @@ CHIP Not {
     OUT out;
 
     PARTS:
-   // A Nand gate with both inputs connected to 'in'
+
     Nand(a=in, b=in, out=out);
 }
